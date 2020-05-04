@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SDKTest.BusinessLogic\SDKTest.BusinessLogic.csproj" />
+    <ProjectReference Include="..\SDKTest.Data.DataAccess\SDKTest.Data.DataAccess.csproj" />
+    <ProjectReference Include="..\SDKTest.Data.Entities\SDKTest.Data.Entities.csproj" />
+    <ProjectReference Include="..\SDKTest.Data.Repository\SDKTest.Data.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
