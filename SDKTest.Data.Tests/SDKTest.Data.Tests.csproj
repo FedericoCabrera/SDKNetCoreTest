@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SDKTest.Data.DataAccess\SDKTest.Data.DataAccess.csproj" />
+    <ProjectReference Include="..\SDKTest.Data.Entities\SDKTest.Data.Entities.csproj" />
+    <ProjectReference Include="..\SDKTest.Data.Repository\SDKTest.Data.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
